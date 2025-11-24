@@ -1,0 +1,1467 @@
+{
+  "session_id": "20251124_102009",
+  "start_time": "2025-11-24 10:20:09.724",
+  "end_time": "2025-11-24 12:13:15.022",
+  "timezone": "Africa/Kigali",
+  "account_type": "DEMO",
+  "initial_balance": 10522.25,
+  "final_balance": 10591.26,
+  "total_profit_loss": 69.01000000000022,
+  "strategy_config": {
+    "enabled": false,
+    "initial_stake": null,
+    "max_chances": null,
+    "default_amount": 5
+  },
+  "statistics": {
+    "total_trades": 33,
+    "winning_trades": 16,
+    "losing_trades": 17,
+    "doji_trades": 0,
+    "win_rate": 48.484848484848484,
+    "total_cycles": 16,
+    "successful_cycles": 16,
+    "failed_cycles": 0,
+    "max_consecutive_losses": 0,
+    "max_consecutive_wins": 0,
+    "largest_win": 139.32,
+    "largest_loss": -54.0,
+    "average_profit_per_win": 10.313125000000001,
+    "average_loss_per_loss": -5.647058823529412
+  },
+  "cycles": [
+    {
+      "cycle_number": 1,
+      "timestamp": "2025-11-24 10:23:18.351",
+      "result": "WIN",
+      "trades_in_cycle": 1,
+      "profit_loss": 0.83,
+      "trades": [
+        {
+          "trade_number": 1,
+          "timestamp": "2025-11-24 10:22:01.294",
+          "trade_id": "edc6bda1-8fba-4c9d-8594-136927a796c7",
+          "asset": "USDEGP_otc",
+          "action": "PUT",
+          "duration": 60,
+          "bet_amount": 1.0,
+          "open_price": 47.9842,
+          "result": "WIN",
+          "profit": 0.83,
+          "balance_before": 10522.25,
+          "balance_after": 10523.08,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 1,
+            "cumulative_loss_before": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "cycle_number": 2,
+      "timestamp": "2025-11-24 10:26:29.941",
+      "result": "WIN",
+      "trades_in_cycle": 1,
+      "profit_loss": 0.77,
+      "trades": [
+        {
+          "trade_number": 2,
+          "timestamp": "2025-11-24 10:25:01.657",
+          "trade_id": "4ca00acc-b14f-4695-8bc8-bd5596923462",
+          "asset": "USDARS_otc",
+          "action": "PUT",
+          "duration": 60,
+          "bet_amount": 1.0,
+          "open_price": 1511.87,
+          "result": "WIN",
+          "profit": 0.77,
+          "balance_before": 10523.08,
+          "balance_after": 10523.85,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 1,
+            "cumulative_loss_before": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "cycle_number": 3,
+      "timestamp": "2025-11-24 10:33:20.407",
+      "result": "WIN",
+      "trades_in_cycle": 2,
+      "profit_loss": 0.6799999999999999,
+      "trades": [
+        {
+          "trade_number": 3,
+          "timestamp": "2025-11-24 10:29:01.280",
+          "trade_id": "c6a2a322-d7ba-411f-8e88-0e87100446c9",
+          "asset": "BRLUSD_otc",
+          "action": "PUT",
+          "duration": 60,
+          "bet_amount": 1.0,
+          "open_price": 0.17952,
+          "result": "LOSS",
+          "profit": -1.0,
+          "balance_before": 10523.85,
+          "balance_after": 10522.85,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 1,
+            "cumulative_loss_before": 0.0
+          }
+        },
+        {
+          "trade_number": 4,
+          "timestamp": "2025-11-24 10:32:01.645",
+          "trade_id": "0a5aaabf-7995-4944-9a5a-cd25ec518f01",
+          "asset": "USDEGP_otc",
+          "action": "PUT",
+          "duration": 60,
+          "bet_amount": 2.0,
+          "open_price": 47.9792,
+          "result": "WIN",
+          "profit": 1.68,
+          "balance_before": 10522.85,
+          "balance_after": 10524.53,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 2,
+            "cumulative_loss_before": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "cycle_number": 4,
+      "timestamp": "2025-11-24 10:44:13.112",
+      "result": "WIN",
+      "trades_in_cycle": 3,
+      "profit_loss": 1.5,
+      "trades": [
+        {
+          "trade_number": 5,
+          "timestamp": "2025-11-24 10:35:01.355",
+          "trade_id": "984e46ed-3aad-4b1d-9dfc-fc925a12266f",
+          "asset": "USDBDT_otc",
+          "action": "CALL",
+          "duration": 60,
+          "bet_amount": 1.0,
+          "open_price": 125.129,
+          "result": "LOSS",
+          "profit": -1.0,
+          "balance_before": 10524.53,
+          "balance_after": 10523.53,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 1,
+            "cumulative_loss_before": 0.0
+          }
+        },
+        {
+          "trade_number": 6,
+          "timestamp": "2025-11-24 10:39:01.779",
+          "trade_id": "298acae0-63c9-4435-a851-ef46dc76acc2",
+          "asset": "BRLUSD_otc",
+          "action": "PUT",
+          "duration": 60,
+          "bet_amount": 2.0,
+          "open_price": 0.18033,
+          "result": "LOSS",
+          "profit": -2.0,
+          "balance_before": 10523.53,
+          "balance_after": 10521.53,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 2,
+            "cumulative_loss_before": 1.0
+          }
+        },
+        {
+          "trade_number": 7,
+          "timestamp": "2025-11-24 10:43:01.688",
+          "trade_id": "8bf88884-b369-4039-8d7a-91245a01a827",
+          "asset": "BRLUSD_otc",
+          "action": "PUT",
+          "duration": 60,
+          "bet_amount": 6.0,
+          "open_price": 0.18011,
+          "result": "WIN",
+          "profit": 4.5,
+          "balance_before": 10521.53,
+          "balance_after": 10526.03,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 3,
+            "cumulative_loss_before": 3.0
+          }
+        }
+      ]
+    },
+    {
+      "cycle_number": 5,
+      "timestamp": "2025-11-24 11:06:16.009",
+      "result": "WIN",
+      "trades_in_cycle": 6,
+      "profit_loss": 58.31999999999999,
+      "trades": [
+        {
+          "trade_number": 8,
+          "timestamp": "2025-11-24 10:45:01.593",
+          "trade_id": "e6909aa0-a62c-4153-9f7e-5b6aa3c206c6",
+          "asset": "NZDCAD_otc",
+          "action": "CALL",
+          "duration": 60,
+          "bet_amount": 1.0,
+          "open_price": 0.77948,
+          "result": "LOSS",
+          "profit": -1.0,
+          "balance_before": 10526.03,
+          "balance_after": 10525.03,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 1,
+            "cumulative_loss_before": 0.0
+          }
+        },
+        {
+          "trade_number": 9,
+          "timestamp": "2025-11-24 10:49:01.801",
+          "trade_id": "6eb6b00c-77b1-4e7d-957d-58a8b9b00a99",
+          "asset": "NZDCHF_otc",
+          "action": "PUT",
+          "duration": 60,
+          "bet_amount": 2.0,
+          "open_price": 0.44891,
+          "result": "LOSS",
+          "profit": -2.0,
+          "balance_before": 10525.03,
+          "balance_after": 10523.03,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 2,
+            "cumulative_loss_before": 1.0
+          }
+        },
+        {
+          "trade_number": 10,
+          "timestamp": "2025-11-24 10:51:02.125",
+          "trade_id": "332bc477-c453-48d2-a0ee-90ab7874adca",
+          "asset": "NZDCAD_otc",
+          "action": "CALL",
+          "duration": 60,
+          "bet_amount": 6.0,
+          "open_price": 0.77778,
+          "result": "LOSS",
+          "profit": -6.0,
+          "balance_before": 10523.03,
+          "balance_after": 10517.03,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 3,
+            "cumulative_loss_before": 3.0
+          }
+        },
+        {
+          "trade_number": 11,
+          "timestamp": "2025-11-24 10:54:01.859",
+          "trade_id": "5dda3160-24da-4713-a2cb-df85e6d3033a",
+          "asset": "CADCHF_otc",
+          "action": "PUT",
+          "duration": 60,
+          "bet_amount": 18.0,
+          "open_price": 0.58649,
+          "result": "LOSS",
+          "profit": -18.0,
+          "balance_before": 10517.03,
+          "balance_after": 10499.03,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 4,
+            "cumulative_loss_before": 9.0
+          }
+        },
+        {
+          "trade_number": 12,
+          "timestamp": "2025-11-24 10:57:01.523",
+          "trade_id": "3ce5ebe8-5c6c-4044-bf1c-8d41917512dc",
+          "asset": "USDBDT_otc",
+          "action": "CALL",
+          "duration": 60,
+          "bet_amount": 54.0,
+          "open_price": 124.865,
+          "result": "LOSS",
+          "profit": -54.0,
+          "balance_before": 10499.03,
+          "balance_after": 10445.03,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 5,
+            "cumulative_loss_before": 27.0
+          }
+        },
+        {
+          "trade_number": 13,
+          "timestamp": "2025-11-24 11:05:02.057",
+          "trade_id": "45ec881c-86a0-4913-8bfa-434714bdd4b6",
+          "asset": "NZDJPY_otc",
+          "action": "PUT",
+          "duration": 60,
+          "bet_amount": 162.0,
+          "open_price": 87.935,
+          "result": "WIN",
+          "profit": 139.32,
+          "balance_before": 10445.03,
+          "balance_after": 10584.35,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 6,
+            "cumulative_loss_before": 81.0
+          }
+        }
+      ]
+    },
+    {
+      "cycle_number": 6,
+      "timestamp": "2025-11-24 11:08:09.491",
+      "result": "WIN",
+      "trades_in_cycle": 1,
+      "profit_loss": 0.91,
+      "trades": [
+        {
+          "trade_number": 14,
+          "timestamp": "2025-11-24 11:07:02.164",
+          "trade_id": "2dc49370-0bda-4da1-9fb8-65d6c4a7632c",
+          "asset": "CADCHF_otc",
+          "action": "CALL",
+          "duration": 60,
+          "bet_amount": 1.0,
+          "open_price": 0.58549,
+          "result": "WIN",
+          "profit": 0.91,
+          "balance_before": 10584.35,
+          "balance_after": 10585.26,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 1,
+            "cumulative_loss_before": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "cycle_number": 7,
+      "timestamp": "2025-11-24 11:11:10.470",
+      "result": "WIN",
+      "trades_in_cycle": 1,
+      "profit_loss": 0.84,
+      "trades": [
+        {
+          "trade_number": 15,
+          "timestamp": "2025-11-24 11:10:01.286",
+          "trade_id": "0690b9c3-444c-487c-b4bd-756ed7714366",
+          "asset": "NZDJPY_otc",
+          "action": "PUT",
+          "duration": 60,
+          "bet_amount": 1.0,
+          "open_price": 87.971,
+          "result": "WIN",
+          "profit": 0.84,
+          "balance_before": 10585.26,
+          "balance_after": 10586.1,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 1,
+            "cumulative_loss_before": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "cycle_number": 8,
+      "timestamp": "2025-11-24 11:13:10.433",
+      "result": "WIN",
+      "trades_in_cycle": 1,
+      "profit_loss": 0.89,
+      "trades": [
+        {
+          "trade_number": 16,
+          "timestamp": "2025-11-24 11:12:02.244",
+          "trade_id": "e6652a6f-0203-4092-a28d-7d561e5aea04",
+          "asset": "NZDCHF_otc",
+          "action": "CALL",
+          "duration": 60,
+          "bet_amount": 1.0,
+          "open_price": 0.44571,
+          "result": "WIN",
+          "profit": 0.89,
+          "balance_before": 10586.1,
+          "balance_after": 10586.99,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 1,
+            "cumulative_loss_before": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "cycle_number": 9,
+      "timestamp": "2025-11-24 11:23:12.424",
+      "result": "WIN",
+      "trades_in_cycle": 2,
+      "profit_loss": 0.8200000000000001,
+      "trades": [
+        {
+          "trade_number": 17,
+          "timestamp": "2025-11-24 11:20:01.408",
+          "trade_id": "15f6f551-a607-4c07-b6d8-30eaf9419fa0",
+          "asset": "NZDJPY_otc",
+          "action": "CALL",
+          "duration": 60,
+          "bet_amount": 1.0,
+          "open_price": 87.916,
+          "result": "LOSS",
+          "profit": -1.0,
+          "balance_before": 10586.99,
+          "balance_after": 10585.99,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 1,
+            "cumulative_loss_before": 0.0
+          }
+        },
+        {
+          "trade_number": 18,
+          "timestamp": "2025-11-24 11:22:01.504",
+          "trade_id": "62b35de2-8408-4f6e-9622-1797ffd64a27",
+          "asset": "NZDCHF_otc",
+          "action": "PUT",
+          "duration": 60,
+          "bet_amount": 2.0,
+          "open_price": 0.44521,
+          "result": "WIN",
+          "profit": 1.82,
+          "balance_before": 10585.99,
+          "balance_after": 10587.81,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 2,
+            "cumulative_loss_before": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "cycle_number": 10,
+      "timestamp": "2025-11-24 11:28:13.844",
+      "result": "WIN",
+      "trades_in_cycle": 2,
+      "profit_loss": 0.8600000000000001,
+      "trades": [
+        {
+          "trade_number": 19,
+          "timestamp": "2025-11-24 11:25:01.554",
+          "trade_id": "a0e3b033-b590-4082-b307-93bc295c6c79",
+          "asset": "USDBDT_otc",
+          "action": "PUT",
+          "duration": 60,
+          "bet_amount": 1.0,
+          "open_price": 124.864,
+          "result": "LOSS",
+          "profit": -1.0,
+          "balance_before": 10587.81,
+          "balance_after": 10586.81,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 1,
+            "cumulative_loss_before": 0.0
+          }
+        },
+        {
+          "trade_number": 20,
+          "timestamp": "2025-11-24 11:27:01.638",
+          "trade_id": "e94cb219-a060-4161-9d43-0a4a6c15e77c",
+          "asset": "CADCHF_otc",
+          "action": "CALL",
+          "duration": 60,
+          "bet_amount": 2.0,
+          "open_price": 0.5842,
+          "result": "WIN",
+          "profit": 1.86,
+          "balance_before": 10586.81,
+          "balance_after": 10588.67,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 2,
+            "cumulative_loss_before": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "cycle_number": 11,
+      "timestamp": "2025-11-24 11:30:12.088",
+      "result": "WIN",
+      "trades_in_cycle": 1,
+      "profit_loss": 0.93,
+      "trades": [
+        {
+          "trade_number": 21,
+          "timestamp": "2025-11-24 11:29:01.522",
+          "trade_id": "f5aee1d0-bdb7-40a7-8669-3a8db5aff1e8",
+          "asset": "NZDJPY_otc",
+          "action": "CALL",
+          "duration": 60,
+          "bet_amount": 1.0,
+          "open_price": 87.876,
+          "result": "WIN",
+          "profit": 0.93,
+          "balance_before": 10588.67,
+          "balance_after": 10589.6,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 1,
+            "cumulative_loss_before": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "cycle_number": 12,
+      "timestamp": "2025-11-24 11:40:32.689",
+      "result": "WIN",
+      "trades_in_cycle": 3,
+      "profit_loss": 2.58,
+      "trades": [
+        {
+          "trade_number": 22,
+          "timestamp": "2025-11-24 11:31:02.014",
+          "trade_id": "5a0625ed-d6a8-4332-b6d0-38f698108dde",
+          "asset": "CADCHF_otc",
+          "action": "CALL",
+          "duration": 60,
+          "bet_amount": 1.0,
+          "open_price": 0.585,
+          "result": "LOSS",
+          "profit": -1.0,
+          "balance_before": 10589.6,
+          "balance_after": 10588.6,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 1,
+            "cumulative_loss_before": 0.0
+          }
+        },
+        {
+          "trade_number": 23,
+          "timestamp": "2025-11-24 11:35:02.031",
+          "trade_id": "fa93ba86-91f5-440b-854d-da0514411017",
+          "asset": "AUDNZD_otc",
+          "action": "PUT",
+          "duration": 60,
+          "bet_amount": 2.0,
+          "open_price": 1.17632,
+          "result": "LOSS",
+          "profit": -2.0,
+          "balance_before": 10588.6,
+          "balance_after": 10586.6,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 2,
+            "cumulative_loss_before": 1.0
+          }
+        },
+        {
+          "trade_number": 24,
+          "timestamp": "2025-11-24 11:39:02.331",
+          "trade_id": "cc29e42b-574f-46bc-ab44-2344de45ede7",
+          "asset": "NZDJPY_otc",
+          "action": "CALL",
+          "duration": 60,
+          "bet_amount": 6.0,
+          "open_price": 87.905,
+          "result": "WIN",
+          "profit": 5.58,
+          "balance_before": 10586.6,
+          "balance_after": 10592.18,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 3,
+            "cumulative_loss_before": 3.0
+          }
+        }
+      ]
+    },
+    {
+      "cycle_number": 13,
+      "timestamp": "2025-11-24 11:47:11.241",
+      "result": "WIN",
+      "trades_in_cycle": 2,
+      "profit_loss": 0.8799999999999999,
+      "trades": [
+        {
+          "trade_number": 25,
+          "timestamp": "2025-11-24 11:42:02.008",
+          "trade_id": "a88814a9-1808-4fa4-832a-86278f62d845",
+          "asset": "NZDJPY_otc",
+          "action": "CALL",
+          "duration": 60,
+          "bet_amount": 1.0,
+          "open_price": 87.97,
+          "result": "LOSS",
+          "profit": -1.0,
+          "balance_before": 10592.18,
+          "balance_after": 10591.18,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 1,
+            "cumulative_loss_before": 0.0
+          }
+        },
+        {
+          "trade_number": 26,
+          "timestamp": "2025-11-24 11:46:01.520",
+          "trade_id": "8f2d02db-dd32-49d0-8053-1f4722ef209f",
+          "asset": "CADCHF_otc",
+          "action": "CALL",
+          "duration": 60,
+          "bet_amount": 2.0,
+          "open_price": 0.58252,
+          "result": "WIN",
+          "profit": 1.88,
+          "balance_before": 10591.18,
+          "balance_after": 10593.06,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 2,
+            "cumulative_loss_before": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "cycle_number": 14,
+      "timestamp": "2025-11-24 11:54:10.027",
+      "result": "WIN",
+      "trades_in_cycle": 2,
+      "profit_loss": -0.18000000000000005,
+      "trades": [
+        {
+          "trade_number": 27,
+          "timestamp": "2025-11-24 11:49:01.551",
+          "trade_id": "40e186fd-beb0-4a9c-8835-d066e36fd7fe",
+          "asset": "BRLUSD_otc",
+          "action": "CALL",
+          "duration": 60,
+          "bet_amount": 1.0,
+          "open_price": 0.18315,
+          "result": "LOSS",
+          "profit": -1.0,
+          "balance_before": 10593.06,
+          "balance_after": 10592.06,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 1,
+            "cumulative_loss_before": 0.0
+          }
+        },
+        {
+          "trade_number": 28,
+          "timestamp": "2025-11-24 11:53:01.526",
+          "trade_id": "04e1d365-fd2f-4470-8213-6402a2d0d5f0",
+          "asset": "NZDUSD_otc",
+          "action": "PUT",
+          "duration": 60,
+          "bet_amount": 2.0,
+          "open_price": 0.54648,
+          "result": "WIN",
+          "profit": 0.82,
+          "balance_before": 10592.06,
+          "balance_after": 10592.88,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 2,
+            "cumulative_loss_before": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "cycle_number": 15,
+      "timestamp": "2025-11-24 11:57:15.073",
+      "result": "WIN",
+      "trades_in_cycle": 1,
+      "profit_loss": 0.8,
+      "trades": [
+        {
+          "trade_number": 29,
+          "timestamp": "2025-11-24 11:56:02.521",
+          "trade_id": "2291a46a-e518-481e-abce-919b3bc127fa",
+          "asset": "USDEGP_otc",
+          "action": "CALL",
+          "duration": 60,
+          "bet_amount": 1.0,
+          "open_price": 47.9601,
+          "result": "WIN",
+          "profit": 0.8,
+          "balance_before": 10592.88,
+          "balance_after": 10593.68,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 1,
+            "cumulative_loss_before": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "cycle_number": 16,
+      "timestamp": "2025-11-24 12:03:13.517",
+      "result": "WIN",
+      "trades_in_cycle": 2,
+      "profit_loss": 0.5800000000000001,
+      "trades": [
+        {
+          "trade_number": 30,
+          "timestamp": "2025-11-24 11:59:01.541",
+          "trade_id": "ee01d718-bb8f-4451-82b3-11f5e97d20ae",
+          "asset": "USDBDT_otc",
+          "action": "PUT",
+          "duration": 60,
+          "bet_amount": 1.0,
+          "open_price": 124.875,
+          "result": "LOSS",
+          "profit": -1.0,
+          "balance_before": 10593.68,
+          "balance_after": 10592.68,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 1,
+            "cumulative_loss_before": 0.0
+          }
+        },
+        {
+          "trade_number": 31,
+          "timestamp": "2025-11-24 12:02:02.134",
+          "trade_id": "c63fd702-d868-4e6b-bd3f-e53e96801f41",
+          "asset": "USDEGP_otc",
+          "action": "PUT",
+          "duration": 60,
+          "bet_amount": 2.0,
+          "open_price": 47.963,
+          "result": "WIN",
+          "profit": 1.58,
+          "balance_before": 10592.68,
+          "balance_after": 10594.26,
+          "strategy_info": {
+            "was_strategy_trade": true,
+            "trade_number_in_cycle": 2,
+            "cumulative_loss_before": 1.0
+          }
+        }
+      ]
+    }
+  ],
+  "trades": [
+    {
+      "trade_number": 1,
+      "timestamp": "2025-11-24 10:22:01.294",
+      "trade_id": "edc6bda1-8fba-4c9d-8594-136927a796c7",
+      "asset": "USDEGP_otc",
+      "action": "PUT",
+      "duration": 60,
+      "bet_amount": 1.0,
+      "open_price": 47.9842,
+      "result": "WIN",
+      "profit": 0.83,
+      "balance_before": 10522.25,
+      "balance_after": 10523.08,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 1,
+        "cumulative_loss_before": 0.0
+      }
+    },
+    {
+      "trade_number": 2,
+      "timestamp": "2025-11-24 10:25:01.657",
+      "trade_id": "4ca00acc-b14f-4695-8bc8-bd5596923462",
+      "asset": "USDARS_otc",
+      "action": "PUT",
+      "duration": 60,
+      "bet_amount": 1.0,
+      "open_price": 1511.87,
+      "result": "WIN",
+      "profit": 0.77,
+      "balance_before": 10523.08,
+      "balance_after": 10523.85,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 1,
+        "cumulative_loss_before": 0.0
+      }
+    },
+    {
+      "trade_number": 3,
+      "timestamp": "2025-11-24 10:29:01.280",
+      "trade_id": "c6a2a322-d7ba-411f-8e88-0e87100446c9",
+      "asset": "BRLUSD_otc",
+      "action": "PUT",
+      "duration": 60,
+      "bet_amount": 1.0,
+      "open_price": 0.17952,
+      "result": "LOSS",
+      "profit": -1.0,
+      "balance_before": 10523.85,
+      "balance_after": 10522.85,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 1,
+        "cumulative_loss_before": 0.0
+      }
+    },
+    {
+      "trade_number": 4,
+      "timestamp": "2025-11-24 10:32:01.645",
+      "trade_id": "0a5aaabf-7995-4944-9a5a-cd25ec518f01",
+      "asset": "USDEGP_otc",
+      "action": "PUT",
+      "duration": 60,
+      "bet_amount": 2.0,
+      "open_price": 47.9792,
+      "result": "WIN",
+      "profit": 1.68,
+      "balance_before": 10522.85,
+      "balance_after": 10524.53,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 2,
+        "cumulative_loss_before": 1.0
+      }
+    },
+    {
+      "trade_number": 5,
+      "timestamp": "2025-11-24 10:35:01.355",
+      "trade_id": "984e46ed-3aad-4b1d-9dfc-fc925a12266f",
+      "asset": "USDBDT_otc",
+      "action": "CALL",
+      "duration": 60,
+      "bet_amount": 1.0,
+      "open_price": 125.129,
+      "result": "LOSS",
+      "profit": -1.0,
+      "balance_before": 10524.53,
+      "balance_after": 10523.53,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 1,
+        "cumulative_loss_before": 0.0
+      }
+    },
+    {
+      "trade_number": 6,
+      "timestamp": "2025-11-24 10:39:01.779",
+      "trade_id": "298acae0-63c9-4435-a851-ef46dc76acc2",
+      "asset": "BRLUSD_otc",
+      "action": "PUT",
+      "duration": 60,
+      "bet_amount": 2.0,
+      "open_price": 0.18033,
+      "result": "LOSS",
+      "profit": -2.0,
+      "balance_before": 10523.53,
+      "balance_after": 10521.53,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 2,
+        "cumulative_loss_before": 1.0
+      }
+    },
+    {
+      "trade_number": 7,
+      "timestamp": "2025-11-24 10:43:01.688",
+      "trade_id": "8bf88884-b369-4039-8d7a-91245a01a827",
+      "asset": "BRLUSD_otc",
+      "action": "PUT",
+      "duration": 60,
+      "bet_amount": 6.0,
+      "open_price": 0.18011,
+      "result": "WIN",
+      "profit": 4.5,
+      "balance_before": 10521.53,
+      "balance_after": 10526.03,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 3,
+        "cumulative_loss_before": 3.0
+      }
+    },
+    {
+      "trade_number": 8,
+      "timestamp": "2025-11-24 10:45:01.593",
+      "trade_id": "e6909aa0-a62c-4153-9f7e-5b6aa3c206c6",
+      "asset": "NZDCAD_otc",
+      "action": "CALL",
+      "duration": 60,
+      "bet_amount": 1.0,
+      "open_price": 0.77948,
+      "result": "LOSS",
+      "profit": -1.0,
+      "balance_before": 10526.03,
+      "balance_after": 10525.03,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 1,
+        "cumulative_loss_before": 0.0
+      }
+    },
+    {
+      "trade_number": 9,
+      "timestamp": "2025-11-24 10:49:01.801",
+      "trade_id": "6eb6b00c-77b1-4e7d-957d-58a8b9b00a99",
+      "asset": "NZDCHF_otc",
+      "action": "PUT",
+      "duration": 60,
+      "bet_amount": 2.0,
+      "open_price": 0.44891,
+      "result": "LOSS",
+      "profit": -2.0,
+      "balance_before": 10525.03,
+      "balance_after": 10523.03,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 2,
+        "cumulative_loss_before": 1.0
+      }
+    },
+    {
+      "trade_number": 10,
+      "timestamp": "2025-11-24 10:51:02.125",
+      "trade_id": "332bc477-c453-48d2-a0ee-90ab7874adca",
+      "asset": "NZDCAD_otc",
+      "action": "CALL",
+      "duration": 60,
+      "bet_amount": 6.0,
+      "open_price": 0.77778,
+      "result": "LOSS",
+      "profit": -6.0,
+      "balance_before": 10523.03,
+      "balance_after": 10517.03,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 3,
+        "cumulative_loss_before": 3.0
+      }
+    },
+    {
+      "trade_number": 11,
+      "timestamp": "2025-11-24 10:54:01.859",
+      "trade_id": "5dda3160-24da-4713-a2cb-df85e6d3033a",
+      "asset": "CADCHF_otc",
+      "action": "PUT",
+      "duration": 60,
+      "bet_amount": 18.0,
+      "open_price": 0.58649,
+      "result": "LOSS",
+      "profit": -18.0,
+      "balance_before": 10517.03,
+      "balance_after": 10499.03,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 4,
+        "cumulative_loss_before": 9.0
+      }
+    },
+    {
+      "trade_number": 12,
+      "timestamp": "2025-11-24 10:57:01.523",
+      "trade_id": "3ce5ebe8-5c6c-4044-bf1c-8d41917512dc",
+      "asset": "USDBDT_otc",
+      "action": "CALL",
+      "duration": 60,
+      "bet_amount": 54.0,
+      "open_price": 124.865,
+      "result": "LOSS",
+      "profit": -54.0,
+      "balance_before": 10499.03,
+      "balance_after": 10445.03,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 5,
+        "cumulative_loss_before": 27.0
+      }
+    },
+    {
+      "trade_number": 13,
+      "timestamp": "2025-11-24 11:05:02.057",
+      "trade_id": "45ec881c-86a0-4913-8bfa-434714bdd4b6",
+      "asset": "NZDJPY_otc",
+      "action": "PUT",
+      "duration": 60,
+      "bet_amount": 162.0,
+      "open_price": 87.935,
+      "result": "WIN",
+      "profit": 139.32,
+      "balance_before": 10445.03,
+      "balance_after": 10584.35,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 6,
+        "cumulative_loss_before": 81.0
+      }
+    },
+    {
+      "trade_number": 14,
+      "timestamp": "2025-11-24 11:07:02.164",
+      "trade_id": "2dc49370-0bda-4da1-9fb8-65d6c4a7632c",
+      "asset": "CADCHF_otc",
+      "action": "CALL",
+      "duration": 60,
+      "bet_amount": 1.0,
+      "open_price": 0.58549,
+      "result": "WIN",
+      "profit": 0.91,
+      "balance_before": 10584.35,
+      "balance_after": 10585.26,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 1,
+        "cumulative_loss_before": 0.0
+      }
+    },
+    {
+      "trade_number": 15,
+      "timestamp": "2025-11-24 11:10:01.286",
+      "trade_id": "0690b9c3-444c-487c-b4bd-756ed7714366",
+      "asset": "NZDJPY_otc",
+      "action": "PUT",
+      "duration": 60,
+      "bet_amount": 1.0,
+      "open_price": 87.971,
+      "result": "WIN",
+      "profit": 0.84,
+      "balance_before": 10585.26,
+      "balance_after": 10586.1,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 1,
+        "cumulative_loss_before": 0.0
+      }
+    },
+    {
+      "trade_number": 16,
+      "timestamp": "2025-11-24 11:12:02.244",
+      "trade_id": "e6652a6f-0203-4092-a28d-7d561e5aea04",
+      "asset": "NZDCHF_otc",
+      "action": "CALL",
+      "duration": 60,
+      "bet_amount": 1.0,
+      "open_price": 0.44571,
+      "result": "WIN",
+      "profit": 0.89,
+      "balance_before": 10586.1,
+      "balance_after": 10586.99,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 1,
+        "cumulative_loss_before": 0.0
+      }
+    },
+    {
+      "trade_number": 17,
+      "timestamp": "2025-11-24 11:20:01.408",
+      "trade_id": "15f6f551-a607-4c07-b6d8-30eaf9419fa0",
+      "asset": "NZDJPY_otc",
+      "action": "CALL",
+      "duration": 60,
+      "bet_amount": 1.0,
+      "open_price": 87.916,
+      "result": "LOSS",
+      "profit": -1.0,
+      "balance_before": 10586.99,
+      "balance_after": 10585.99,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 1,
+        "cumulative_loss_before": 0.0
+      }
+    },
+    {
+      "trade_number": 18,
+      "timestamp": "2025-11-24 11:22:01.504",
+      "trade_id": "62b35de2-8408-4f6e-9622-1797ffd64a27",
+      "asset": "NZDCHF_otc",
+      "action": "PUT",
+      "duration": 60,
+      "bet_amount": 2.0,
+      "open_price": 0.44521,
+      "result": "WIN",
+      "profit": 1.82,
+      "balance_before": 10585.99,
+      "balance_after": 10587.81,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 2,
+        "cumulative_loss_before": 1.0
+      }
+    },
+    {
+      "trade_number": 19,
+      "timestamp": "2025-11-24 11:25:01.554",
+      "trade_id": "a0e3b033-b590-4082-b307-93bc295c6c79",
+      "asset": "USDBDT_otc",
+      "action": "PUT",
+      "duration": 60,
+      "bet_amount": 1.0,
+      "open_price": 124.864,
+      "result": "LOSS",
+      "profit": -1.0,
+      "balance_before": 10587.81,
+      "balance_after": 10586.81,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 1,
+        "cumulative_loss_before": 0.0
+      }
+    },
+    {
+      "trade_number": 20,
+      "timestamp": "2025-11-24 11:27:01.638",
+      "trade_id": "e94cb219-a060-4161-9d43-0a4a6c15e77c",
+      "asset": "CADCHF_otc",
+      "action": "CALL",
+      "duration": 60,
+      "bet_amount": 2.0,
+      "open_price": 0.5842,
+      "result": "WIN",
+      "profit": 1.86,
+      "balance_before": 10586.81,
+      "balance_after": 10588.67,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 2,
+        "cumulative_loss_before": 1.0
+      }
+    },
+    {
+      "trade_number": 21,
+      "timestamp": "2025-11-24 11:29:01.522",
+      "trade_id": "f5aee1d0-bdb7-40a7-8669-3a8db5aff1e8",
+      "asset": "NZDJPY_otc",
+      "action": "CALL",
+      "duration": 60,
+      "bet_amount": 1.0,
+      "open_price": 87.876,
+      "result": "WIN",
+      "profit": 0.93,
+      "balance_before": 10588.67,
+      "balance_after": 10589.6,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 1,
+        "cumulative_loss_before": 0.0
+      }
+    },
+    {
+      "trade_number": 22,
+      "timestamp": "2025-11-24 11:31:02.014",
+      "trade_id": "5a0625ed-d6a8-4332-b6d0-38f698108dde",
+      "asset": "CADCHF_otc",
+      "action": "CALL",
+      "duration": 60,
+      "bet_amount": 1.0,
+      "open_price": 0.585,
+      "result": "LOSS",
+      "profit": -1.0,
+      "balance_before": 10589.6,
+      "balance_after": 10588.6,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 1,
+        "cumulative_loss_before": 0.0
+      }
+    },
+    {
+      "trade_number": 23,
+      "timestamp": "2025-11-24 11:35:02.031",
+      "trade_id": "fa93ba86-91f5-440b-854d-da0514411017",
+      "asset": "AUDNZD_otc",
+      "action": "PUT",
+      "duration": 60,
+      "bet_amount": 2.0,
+      "open_price": 1.17632,
+      "result": "LOSS",
+      "profit": -2.0,
+      "balance_before": 10588.6,
+      "balance_after": 10586.6,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 2,
+        "cumulative_loss_before": 1.0
+      }
+    },
+    {
+      "trade_number": 24,
+      "timestamp": "2025-11-24 11:39:02.331",
+      "trade_id": "cc29e42b-574f-46bc-ab44-2344de45ede7",
+      "asset": "NZDJPY_otc",
+      "action": "CALL",
+      "duration": 60,
+      "bet_amount": 6.0,
+      "open_price": 87.905,
+      "result": "WIN",
+      "profit": 5.58,
+      "balance_before": 10586.6,
+      "balance_after": 10592.18,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 3,
+        "cumulative_loss_before": 3.0
+      }
+    },
+    {
+      "trade_number": 25,
+      "timestamp": "2025-11-24 11:42:02.008",
+      "trade_id": "a88814a9-1808-4fa4-832a-86278f62d845",
+      "asset": "NZDJPY_otc",
+      "action": "CALL",
+      "duration": 60,
+      "bet_amount": 1.0,
+      "open_price": 87.97,
+      "result": "LOSS",
+      "profit": -1.0,
+      "balance_before": 10592.18,
+      "balance_after": 10591.18,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 1,
+        "cumulative_loss_before": 0.0
+      }
+    },
+    {
+      "trade_number": 26,
+      "timestamp": "2025-11-24 11:46:01.520",
+      "trade_id": "8f2d02db-dd32-49d0-8053-1f4722ef209f",
+      "asset": "CADCHF_otc",
+      "action": "CALL",
+      "duration": 60,
+      "bet_amount": 2.0,
+      "open_price": 0.58252,
+      "result": "WIN",
+      "profit": 1.88,
+      "balance_before": 10591.18,
+      "balance_after": 10593.06,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 2,
+        "cumulative_loss_before": 1.0
+      }
+    },
+    {
+      "trade_number": 27,
+      "timestamp": "2025-11-24 11:49:01.551",
+      "trade_id": "40e186fd-beb0-4a9c-8835-d066e36fd7fe",
+      "asset": "BRLUSD_otc",
+      "action": "CALL",
+      "duration": 60,
+      "bet_amount": 1.0,
+      "open_price": 0.18315,
+      "result": "LOSS",
+      "profit": -1.0,
+      "balance_before": 10593.06,
+      "balance_after": 10592.06,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 1,
+        "cumulative_loss_before": 0.0
+      }
+    },
+    {
+      "trade_number": 28,
+      "timestamp": "2025-11-24 11:53:01.526",
+      "trade_id": "04e1d365-fd2f-4470-8213-6402a2d0d5f0",
+      "asset": "NZDUSD_otc",
+      "action": "PUT",
+      "duration": 60,
+      "bet_amount": 2.0,
+      "open_price": 0.54648,
+      "result": "WIN",
+      "profit": 0.82,
+      "balance_before": 10592.06,
+      "balance_after": 10592.88,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 2,
+        "cumulative_loss_before": 1.0
+      }
+    },
+    {
+      "trade_number": 29,
+      "timestamp": "2025-11-24 11:56:02.521",
+      "trade_id": "2291a46a-e518-481e-abce-919b3bc127fa",
+      "asset": "USDEGP_otc",
+      "action": "CALL",
+      "duration": 60,
+      "bet_amount": 1.0,
+      "open_price": 47.9601,
+      "result": "WIN",
+      "profit": 0.8,
+      "balance_before": 10592.88,
+      "balance_after": 10593.68,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 1,
+        "cumulative_loss_before": 0.0
+      }
+    },
+    {
+      "trade_number": 30,
+      "timestamp": "2025-11-24 11:59:01.541",
+      "trade_id": "ee01d718-bb8f-4451-82b3-11f5e97d20ae",
+      "asset": "USDBDT_otc",
+      "action": "PUT",
+      "duration": 60,
+      "bet_amount": 1.0,
+      "open_price": 124.875,
+      "result": "LOSS",
+      "profit": -1.0,
+      "balance_before": 10593.68,
+      "balance_after": 10592.68,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 1,
+        "cumulative_loss_before": 0.0
+      }
+    },
+    {
+      "trade_number": 31,
+      "timestamp": "2025-11-24 12:02:02.134",
+      "trade_id": "c63fd702-d868-4e6b-bd3f-e53e96801f41",
+      "asset": "USDEGP_otc",
+      "action": "PUT",
+      "duration": 60,
+      "bet_amount": 2.0,
+      "open_price": 47.963,
+      "result": "WIN",
+      "profit": 1.58,
+      "balance_before": 10592.68,
+      "balance_after": 10594.26,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 2,
+        "cumulative_loss_before": 1.0
+      }
+    },
+    {
+      "trade_number": 32,
+      "timestamp": "2025-11-24 12:05:02.185",
+      "trade_id": "34a96faa-7fc9-45e0-ad0c-e282f2d737fb",
+      "asset": "USDBDT_otc",
+      "action": "CALL",
+      "duration": 60,
+      "bet_amount": 1.0,
+      "open_price": 124.86,
+      "result": "LOSS",
+      "profit": -1.0,
+      "balance_before": 10594.26,
+      "balance_after": 10593.26,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 1,
+        "cumulative_loss_before": 0.0
+      }
+    },
+    {
+      "trade_number": 33,
+      "timestamp": "2025-11-24 12:12:01.589",
+      "trade_id": "a79be102-07d6-4eba-a1f5-23b7bcf7a952",
+      "asset": "BRLUSD_otc",
+      "action": "CALL",
+      "duration": 60,
+      "bet_amount": 2.0,
+      "open_price": 0.18225,
+      "result": "LOSS",
+      "profit": -2.0,
+      "balance_before": 10593.26,
+      "balance_after": 10591.26,
+      "strategy_info": {
+        "was_strategy_trade": true,
+        "trade_number_in_cycle": 2,
+        "cumulative_loss_before": 1.0
+      }
+    }
+  ],
+  "events": [
+    {
+      "timestamp": "2025-11-24 10:20:09.724",
+      "type": "SESSION_START",
+      "description": "Trading session started",
+      "details": {
+        "initial_balance": 10522.25,
+        "strategy_enabled": false
+      }
+    },
+    {
+      "timestamp": "2025-11-24 10:20:09.729",
+      "type": "AUTO_TRADE_START",
+      "description": "Auto trading started with strategy",
+      "details": {
+        "strategy_enabled": true,
+        "initial_stake": 1.0,
+        "max_chances": 6,
+        "required_capital": 243.0
+      }
+    },
+    {
+      "timestamp": "2025-11-24 11:01:02.117",
+      "type": "TRADE_FAILED",
+      "description": "Asset BRLUSD_otc is closed",
+      "details": {
+        "asset": "BRLUSD_otc",
+        "action": "call",
+        "amount": 162.0
+      }
+    },
+    {
+      "timestamp": "2025-11-24 11:16:01.531",
+      "type": "TRADE_FAILED",
+      "description": "Asset BRLUSD_otc is closed",
+      "details": {
+        "asset": "BRLUSD_otc",
+        "action": "call",
+        "amount": 1.0
+      }
+    },
+    {
+      "timestamp": "2025-11-24 12:09:02.453",
+      "type": "TRADE_FAILED",
+      "description": "Asset USDBDT_otc is closed",
+      "details": {
+        "asset": "USDBDT_otc",
+        "action": "call",
+        "amount": 2.0
+      }
+    },
+    {
+      "timestamp": "2025-11-24 12:13:15.049",
+      "type": "SESSION_END",
+      "description": "Session ended: MANUAL_STOP",
+      "details": {
+        "final_balance": 10591.26,
+        "total_profit_loss": 69.01000000000022,
+        "duration": "1:53:05"
+      }
+    }
+  ],
+  "termination": {
+    "reason": "MANUAL_STOP",
+    "timestamp": "2025-11-24 12:13:15.022",
+    "was_planned": true
+  },
+  "duration": {
+    "total_seconds": 6785.298,
+    "formatted": "1:53:05"
+  }
+}
