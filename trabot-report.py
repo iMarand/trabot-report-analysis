@@ -24,21 +24,22 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS
+# Custom CSS - Responsive Design
 st.markdown("""
 <style>
     .main-header {
-        font-size: 3rem;
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
         font-weight: bold;
         text-align: center;
         background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        padding: 1rem 0;
+        padding: 0.5rem 0;
+        margin-bottom: 1rem;
     }
     .metric-card {
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        padding: 1.5rem;
+        padding: 1rem;
         border-radius: 10px;
         color: white;
         text-align: center;
@@ -46,16 +47,73 @@ st.markdown("""
     .profit-positive {
         color: #00ff00;
         font-weight: bold;
+        font-size: clamp(0.9rem, 2vw, 1rem);
     }
     .profit-negative {
         color: #ff4444;
         font-weight: bold;
+        font-size: clamp(0.9rem, 2vw, 1rem);
     }
     .stat-box {
         background: #f0f2f6;
-        padding: 1rem;
+        padding: 0.75rem;
         border-radius: 8px;
         margin: 0.5rem 0;
+    }
+    
+    /* Responsive text scaling */
+    h1, h2, h3 {
+        font-size: clamp(1rem, 3vw, 1.5rem) !important;
+    }
+    
+    /* Make metrics more compact on mobile */
+    [data-testid="stMetricValue"] {
+        font-size: clamp(1rem, 2.5vw, 1.5rem) !important;
+    }
+    
+    [data-testid="stMetricLabel"] {
+        font-size: clamp(0.8rem, 2vw, 1rem) !important;
+    }
+    
+    /* Responsive dataframe */
+    [data-testid="stDataFrame"] {
+        font-size: clamp(0.7rem, 1.5vw, 0.9rem) !important;
+    }
+    
+    /* Better spacing on mobile */
+    @media (max-width: 768px) {
+        .main-header {
+            font-size: 1.5rem;
+            padding: 0.3rem 0;
+        }
+        
+        .stTabs [data-baseweb="tab-list"] {
+            gap: 0.5rem;
+        }
+        
+        .stTabs [data-baseweb="tab"] {
+            font-size: 0.8rem;
+            padding: 0.5rem 0.75rem;
+        }
+        
+        .metric-card {
+            padding: 0.75rem;
+        }
+    }
+    
+    /* Extra small devices */
+    @media (max-width: 480px) {
+        .main-header {
+            font-size: 1.2rem;
+        }
+        
+        [data-testid="stMetricValue"] {
+            font-size: 1rem !important;
+        }
+        
+        [data-testid="stMetricLabel"] {
+            font-size: 0.75rem !important;
+        }
     }
 </style>
 """, unsafe_allow_html=True)
@@ -119,7 +177,7 @@ def display_session_overview(session_data):
     st.divider()
     
     # Financial Summary
-    st.subheader("💰 Financial Summary")
+    st.markdown("#### 💰 Financial Summary")
     col1, col2, col3, col4 = st.columns(4)
     
     initial = session_data.get('initial_balance', 0)
@@ -145,7 +203,7 @@ def display_statistics(session_data):
     """Display trading statistics"""
     stats = session_data.get('statistics', {})
     
-    st.subheader("📈 Trading Statistics")
+    st.markdown("#### 📈 Trading Statistics")
     
     col1, col2, col3 = st.columns(3)
     
@@ -184,7 +242,7 @@ def display_trades_table(session_data):
         st.info("No trades recorded in this session")
         return
     
-    st.subheader("📋 Trade History")
+    st.markdown("#### 📋 Trade History")
     
     # Convert to DataFrame
     df = pd.DataFrame(trades)
@@ -231,14 +289,37 @@ def display_charts(session_data):
     if not trades:
         return
     
-    st.subheader("📊 Visual Analysis")
+    st.markdown("#### 📊 Visual Analysis")
     
     # Create DataFrame
     df = pd.DataFrame(trades)
     
-    tab1, tab2, tab3, tab4 = st.tabs(["Balance Over Time", "Win/Loss Distribution", "Profit by Trade", "Asset Performance"])
+    # CHANGED: Profit by Trade is now first tab
+    tab1, tab2, tab3, tab4 = st.tabs(["Profit by Trade", "Balance Over Time", "Win/Loss Distribution", "Asset Performance"])
     
     with tab1:
+        # Profit/Loss by trade - NOW DEFAULT VIEW
+        colors = ['green' if x > 0 else 'red' if x < 0 else 'gray' for x in df['profit']]
+        
+        fig = go.Figure(data=[go.Bar(
+            x=list(range(1, len(df) + 1)),
+            y=df['profit'],
+            marker_color=colors,
+            text=df['profit'].apply(lambda x: f"${x:+.2f}"),
+            textposition='outside'
+        )])
+        
+        fig.update_layout(
+            title="Profit/Loss per Trade",
+            xaxis_title="Trade Number",
+            yaxis_title="Profit/Loss ($)",
+            height=400,
+            showlegend=False
+        )
+        fig.add_hline(y=0, line_dash="dash", line_color="gray")
+        st.plotly_chart(fig, use_container_width=True)
+    
+    with tab2:
         # Balance progression chart
         fig = go.Figure()
         fig.add_trace(go.Scatter(
@@ -266,7 +347,7 @@ def display_charts(session_data):
         )
         st.plotly_chart(fig, use_container_width=True)
     
-    with tab2:
+    with tab3:
         # Win/Loss pie chart
         result_counts = df['result'].value_counts()
         
@@ -286,28 +367,6 @@ def display_charts(session_data):
             title="Trade Results Distribution",
             height=400
         )
-        st.plotly_chart(fig, use_container_width=True)
-    
-    with tab3:
-        # Profit/Loss by trade
-        colors = ['green' if x > 0 else 'red' if x < 0 else 'gray' for x in df['profit']]
-        
-        fig = go.Figure(data=[go.Bar(
-            x=list(range(1, len(df) + 1)),
-            y=df['profit'],
-            marker_color=colors,
-            text=df['profit'].apply(lambda x: f"${x:+.2f}"),
-            textposition='outside'
-        )])
-        
-        fig.update_layout(
-            title="Profit/Loss per Trade",
-            xaxis_title="Trade Number",
-            yaxis_title="Profit/Loss ($)",
-            height=400,
-            showlegend=False
-        )
-        fig.add_hline(y=0, line_dash="dash", line_color="gray")
         st.plotly_chart(fig, use_container_width=True)
     
     with tab4:
@@ -346,7 +405,7 @@ def display_cycles(session_data):
         st.info("No cycle data available (not using strategy or session incomplete)")
         return
     
-    st.subheader("🎯 Martingale Cycles")
+    st.markdown("#### 🎯 Martingale Cycles")
     
     for cycle in cycles:
         cycle_num = cycle.get('cycle_number', 0)
@@ -393,7 +452,7 @@ def display_events(session_data):
         st.info("No events logged")
         return
     
-    st.subheader("📅 Session Events Timeline")
+    st.markdown("#### 📅 Session Events Timeline")
     
     for event in events:
         event_type = event.get('type', 'UNKNOWN')
@@ -425,7 +484,7 @@ def display_strategy_config(session_data):
     """Display strategy configuration"""
     strategy = session_data.get('strategy_config', {})
     
-    st.subheader("⚙️ Strategy Configuration")
+    st.markdown("#### ⚙️ Strategy Configuration")
     
     if strategy.get('enabled', False):
         col1, col2, col3 = st.columns(3)
@@ -541,7 +600,7 @@ def main():
     
     # Termination info
     st.divider()
-    st.subheader("🏁 Session Termination")
+    st.markdown("#### 🏁 Session Termination")
     termination = session_data.get('termination', {})
     col1, col2, col3 = st.columns(3)
     with col1:
