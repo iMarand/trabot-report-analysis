@@ -5,7 +5,7 @@
   "timezone": "Africa/Kigali",
   "account_type": "DEMO",
   "initial_balance": 10582.63,
-  "final_balance": 10510.35,
+  "final_balance": 10606.55,
   "total_profit_loss": 23.92,
   "strategy_config": {
     "enabled": false,
